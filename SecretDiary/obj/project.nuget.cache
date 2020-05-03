@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "iuQ/3RzvvevIHQTvQovmgKpa+gWnI0tILrg64k9a0YltkhTN4sdko7awFzA2J+KoCdeIMxph4YP4Z5mWqOp9qg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\carla\\source\\Secret-Diary\\SecretDiary\\SecretDiary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\carla\\.nuget\\packages\\microsoft.codeanalysis.fxcopanalyzers\\3.0.0\\microsoft.codeanalysis.fxcopanalyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\carla\\.nuget\\packages\\microsoft.codeanalysis.versioncheckanalyzer\\3.0.0\\microsoft.codeanalysis.versioncheckanalyzer.3.0.0.nupkg.sha512",
+    "C:\\Users\\carla\\.nuget\\packages\\microsoft.codequality.analyzers\\3.0.0\\microsoft.codequality.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\carla\\.nuget\\packages\\microsoft.netcore.analyzers\\3.0.0\\microsoft.netcore.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\carla\\.nuget\\packages\\microsoft.netframework.analyzers\\3.0.0\\microsoft.netframework.analyzers.3.0.0.nupkg.sha512",
+    "C:\\Users\\carla\\.nuget\\packages\\roslynator.analyzers\\2.3.0\\roslynator.analyzers.2.3.0.nupkg.sha512",
+    "C:\\Users\\carla\\.nuget\\packages\\sonaranalyzer.csharp\\8.6.1.17183\\sonaranalyzer.csharp.8.6.1.17183.nupkg.sha512",
+    "C:\\Users\\carla\\.nuget\\packages\\stylecop.analyzers\\1.1.118\\stylecop.analyzers.1.1.118.nupkg.sha512"
+  ],
+  "logs": []
+}
