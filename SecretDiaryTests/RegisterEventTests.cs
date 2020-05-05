@@ -1,10 +1,9 @@
-﻿using SecretDiary;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 using Xunit;
 
-namespace CircularDoublyLinkedListTest
+namespace SecretDiary
 {
     public class RegisterEventTests
     {
