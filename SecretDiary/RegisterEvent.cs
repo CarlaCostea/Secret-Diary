@@ -4,22 +4,24 @@ using System.Text;
 
 namespace SecretDiary
 {
-        public class RegisterEvent
+    public class RegisterEvent
+    {
+        public RegisterEvent(DateTime eventTimeStamp, string eventTitle, string eventDetails)
         {
-            private DateTime eventTimeStamp;
-            private string eventTitle;
-            private string eventDetails;
+            this.EventTimeStamp = eventTimeStamp;
+            this.EventTitle = eventTitle;
+            this.EventDetails = eventDetails;
+        }
 
-            public RegisterEvent(DateTime eventTimeStamp, string eventTitle, string eventDetails)
-            {
-                this.eventTimeStamp = eventTimeStamp;
-                this.eventTitle = eventTitle;
-                this.eventDetails = eventDetails;
-            }
+        public DateTime EventTimeStamp { get; set; }
 
-            public string GetEvent()
+        public string EventTitle { get; set; }
+
+        public string EventDetails { get; set; }
+
+        public string GetEvent()
             {
-                return eventTimeStamp + "\n" + eventTitle + "\n" + eventDetails;
+                return EventTimeStamp + "\n" + EventTitle + "\n" + EventDetails;
             }
         }
 }
