@@ -8,5 +8,9 @@ namespace SecretDiaryTests
     public class DataStorageTests
     {
         [Fact]
+        public void Test()
+        {
+
+        }
     }
 }

@@ -13,6 +13,8 @@ namespace SecretDiary
             RegisterEvent myFirstEvent = new RegisterEvent(DateTime.Now, "New test", "I'm trying to add an event in my Secret Diary");
             string firstEvent = DateTime.Now + "\n" + "New test" + "\n" + "I'm trying to add an event in my Secret Diary";
             Assert.Equal(firstEvent, myFirstEvent.GetEvent());
+            Assert.Equal("New test", myFirstEvent.Title);
+            Assert.Equal("I'm trying to add an event in my Secret Diary", myFirstEvent.Story);
         }
     }
 }

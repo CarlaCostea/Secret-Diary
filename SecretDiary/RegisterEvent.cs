@@ -8,20 +8,20 @@ namespace SecretDiary
     {
         public RegisterEvent(DateTime eventTimeStamp, string eventTitle, string eventDetails)
         {
-            this.EventTimeStamp = eventTimeStamp;
-            this.EventTitle = eventTitle;
-            this.EventDetails = eventDetails;
+            this.TimeStamp = eventTimeStamp;
+            this.Title = eventTitle;
+            this.Story = eventDetails;
         }
 
-        public DateTime EventTimeStamp { get; set; }
+        public DateTime TimeStamp { get; set; }
 
-        public string EventTitle { get; set; }
+        public string Title { get; set; }
 
-        public string EventDetails { get; set; }
+        public string Story { get; set; }
 
         public string GetEvent()
             {
-                return EventTimeStamp + "\n" + EventTitle + "\n" + EventDetails;
+                return TimeStamp + "\n" + Title + "\n" + Story;
             }
         }
 }
