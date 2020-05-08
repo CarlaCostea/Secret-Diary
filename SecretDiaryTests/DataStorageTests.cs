@@ -13,8 +13,13 @@ namespace SecretDiaryTests
         public void Test()
         {
             DataStorage thisWeek = new DataStorage();
-            RegisterEvent monday = new RegisterEvent(DateTime.Today , "Coffe", "bIS");
-            thisWeek.AddEvent(monday);
+            RegisterEvent morning = new RegisterEvent(DateTime.Now , "Coffe", "bIS");
+            thisWeek.AddEvent(morning);
+            RegisterEvent afternoon = new RegisterEvent(DateTime.Now, "Work", "I'm working on my project");
+            thisWeek.AddEvent(afternoon);
+            RegisterEvent evening = new RegisterEvent(DateTime.Now, "Work", "I'm still working on my project");
+            thisWeek.AddEvent(evening);
+            Assert.Equal(thisWeek.ToString(), morning.GetEvent() + afternoon.GetEvent() + evening.GetEvent());
         }
     }
 }
