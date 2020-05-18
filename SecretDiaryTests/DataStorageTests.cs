@@ -10,16 +10,28 @@ namespace SecretDiaryTests
     public class DataStorageTests
     {
         [Fact]
-        public void Test()
+        public void TestAddEvent()
         {
             DataStorage thisWeek = new DataStorage();
-            RegisterEvent morning = new RegisterEvent(DateTime.Now , "Coffe", "bIS");
+            Event morning = new Event(DateTime.Now , "Coffe", "bIS");
             thisWeek.AddEvent(morning);
-            RegisterEvent afternoon = new RegisterEvent(DateTime.Now, "Work", "I'm working on my project");
+            Event afternoon = new Event(DateTime.Now, "Work", "I'm working on my project");
             thisWeek.AddEvent(afternoon);
-            RegisterEvent evening = new RegisterEvent(DateTime.Now, "Work", "I'm still working on my project");
+            Event evening = new Event(DateTime.Now, "Work", "I'm still working on my project");
             thisWeek.AddEvent(evening);
-            Assert.Equal(thisWeek.ToString(), morning.GetEvent() + afternoon.GetEvent() + evening.GetEvent());
+        }
+
+        [Fact]
+        public void CountEvents()
+        {
+            DataStorage thisWeek = new DataStorage();
+            Event morning = new Event(DateTime.Now, "Coffe", "bIS");
+            thisWeek.AddEvent(morning);
+            Event afternoon = new Event(DateTime.Now, "Work", "I'm working on my project");
+            thisWeek.AddEvent(afternoon);
+            Event evening = new Event(DateTime.Now, "Work", "I'm still working on my project");
+            thisWeek.AddEvent(evening);
+            Assert.Equal(3, thisWeek.Count);
         }
     }
 }

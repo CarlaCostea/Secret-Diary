@@ -4,9 +4,9 @@ using System.Text;
 
 namespace SecretDiary
 {
-    public class RegisterEvent
+    public class Event
     {
-        public RegisterEvent(DateTime eventTimeStamp, string eventTitle, string eventDetails)
+        public Event(DateTime eventTimeStamp, string eventTitle, string eventDetails)
         {
             this.TimeStamp = eventTimeStamp;
             this.Title = eventTitle;
